@@ -13,7 +13,7 @@ import Shared.Events;
 public class LoadCalendarData {
 	
 	Gson gson = new GsonBuilder().create();
-	ArrayList<String> requestedDates = new ArrayList<String>();
+	ArrayList<String> requestDates = new ArrayList<String>();
 	ArrayList<String> labelDates = new ArrayList<String>();
 	ArrayList<String> matchedEvents = new ArrayList<String>();
 	
@@ -88,10 +88,10 @@ public class LoadCalendarData {
 		}
 	}
 	
-	public void requestedDates(int year, int month, int day, int daysInMonth) {
+	public void requestDates(int year, int month, int day, int daysInMonth) {
 		
 		//Remove existing values, if any
-		requestedDates.clear();
+		requestDates.clear();
 		
 		int currentMonth = month;
 		
@@ -115,15 +115,15 @@ public class LoadCalendarData {
 			String monthString = String.valueOf(month);
 			String dayString = String.valueOf(dayInt);
 			
-			String requestedDate = yearString + "-" + monthString + "-" + dayString;
-			System.out.println(requestedDate);
+			String requestDate = yearString + "-" + monthString + "-" + dayString;
+			System.out.println(requestDate);
 			
-			requestedDates.add(requestedDate);
+			requestDates.add(requestDate);
 		}
         
     }
 	
-	public void currentDates(int year, int month, int day, int daysInMonth) {
+	public void currentDate(int year, int month, int day, int daysInMonth) {
 
 		int currentMonth = month;
 		
@@ -150,12 +150,12 @@ public class LoadCalendarData {
 			String requestedDate = yearString + "-" + monthString + "-" + dayString;
 			System.out.println(requestedDate);
 			
-			requestedDates.add(requestedDate);
+			requestDates.add(requestedDate);
 		}
 	}
 	
 	public ArrayList<String> getRequestedDates(){
-    	return requestedDates;
+    	return requestDates;
     }
 	
 	public ArrayList<String> getLabelDates(){

@@ -257,7 +257,7 @@ public class CalendarPanel extends JPanel {
         	      String currentDayString = mtblCalendar.getValueAt(row, column).toString();
         	      int currentDay = Integer.parseInt(currentDayString);
         	      int daysInMonth = cal.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
-        	      lcd.requestedDates(currentYear, currentMonth, currentDay, daysInMonth);
+        	      lcd.requestDates(currentYear, currentMonth, currentDay, daysInMonth);
         	      lblFirstDate.setText(lcd.getLabelDates().get(0));
         	      lblSecondDate.setText(lcd.getLabelDates().get(1));
         	      lblThirdDate.setText(lcd.getLabelDates().get(2));
@@ -614,7 +614,7 @@ public class CalendarPanel extends JPanel {
 			public void componentShown(ComponentEvent arg0) {
 				// load when component is shown
       	        int daysInMonth = cal.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
-      	        lcd.currentDates(currentYear, currentMonth, realDay, daysInMonth);
+      	        lcd.currentDate(currentYear, currentMonth, realDay, daysInMonth);
       	        // Update date-labels
       	        lblFirstDate.setText(lcd.getLabelDates().get(0));
     	        lblSecondDate.setText(lcd.getLabelDates().get(1));
