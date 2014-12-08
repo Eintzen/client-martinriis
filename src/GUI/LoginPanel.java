@@ -3,7 +3,7 @@ import javax.swing.*;
 
 import GUI.MainContainer;
 import Logic.ApplicationState;
-import Logic.User;
+import Logic.ValidateUser;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -88,7 +88,7 @@ public class LoginPanel extends JPanel {
 	
 	// Login button actions
 	public void loginBtnAuthUser() {
-		User user = new User();
+		ValidateUser user = new ValidateUser();
 		user.usermail = userMail.getText();
 		user.password = userPass.getText();
 		try {

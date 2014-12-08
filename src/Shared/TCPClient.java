@@ -9,7 +9,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import Logic.ApplicationState;
-import Logic.User;
+import Logic.ValidateUser;
 
 public class TCPClient {
 	

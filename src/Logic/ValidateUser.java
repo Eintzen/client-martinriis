@@ -6,7 +6,7 @@ import com.google.gson.GsonBuilder;
 import Shared.TCPClient;
 import Shared.AuthUser;
 
-public class User {
+public class ValidateUser {
 	
 	public String usermail;
 	public String password;
