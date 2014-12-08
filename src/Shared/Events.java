@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
-/**
- * Created by jesperbruun on 10/10/14.
- * Den laver selve arrayet af alle generede Event
- */
 public class Events {
     ArrayList<Event> events = new ArrayList<Event>();
     
@@ -23,7 +19,7 @@ public class Events {
     	return events;
     }
     
-    // Konverterer array events til en tekst streng
+    // Converts array events to a String
     @Override
     public String toString() {
         return Arrays.toString(events.toArray());

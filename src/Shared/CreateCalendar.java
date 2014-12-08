@@ -9,7 +9,7 @@ public class CreateCalendar implements java.io.Serializable
 	private int publicOrPrivate;
 	private int customCalendar;
 	
-	//Getters and setters for everything
+	//Getters and setters for Creating calendar
 	public String getOverallID() {
 		return overallID;
 	}

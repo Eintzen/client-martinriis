@@ -10,14 +10,14 @@ public class Weather {
     private String celsius;
     private String desc;
 
-    // Funktion som setter dato, grader og beskrivelse til Forecast objektet
+    // Function which sets date, degrees and describes the forecast object
     public Weather(String date, String celsius, String desc) {
         this.date = date;
         this.celsius = celsius;
         this.desc = desc;
     }
     
-    // Settere og gettere for Forecast klassen
+    // Settere og gettere for the Forecast class
     public String getDate() {
         return date;
     }
@@ -42,7 +42,7 @@ public class Weather {
         this.desc = desc;
     }
     
-    // Returnerer vejrudsigten som en json tekststreng
+    // returns weatherdata as JSON string
     public String toString() {
         return "Forecast{" +
                 "date='" + date + '\'' +
