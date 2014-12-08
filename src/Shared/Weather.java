@@ -4,14 +4,14 @@ package Shared;
  * Created by danielfranch on 16/10/14.
  * Constructor til ForecastModel Arraylist
  */
-public class Forecast {
+public class Weather {
 
     private String date;
     private String celsius;
     private String desc;
 
     // Funktion som setter dato, grader og beskrivelse til Forecast objektet
-    public Forecast(String date, String celsius, String desc) {
+    public Weather(String date, String celsius, String desc) {
         this.date = date;
         this.celsius = celsius;
         this.desc = desc;

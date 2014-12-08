@@ -3,7 +3,7 @@ package Logic;
 import java.sql.Date;
 import java.util.ArrayList;
 
-import Shared.Forecast;
+import Shared.Weather;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -14,13 +14,13 @@ import Shared.TCPClient;
 public class WeatherData {
 	
 	TCPClient TcpClient = new TCPClient();
-	private ArrayList<Forecast> forecastList = new ArrayList();
+	private ArrayList<Weather> forecastList = new ArrayList();
 	
 	public void getWeatherData() throws Exception{
 		String inFromServer = TcpClient.getWeatherData();
 		
 		// get 'forecastList' ArrayList from server
-		java.lang.reflect.Type listType = new TypeToken<ArrayList<Forecast>>() {
+		java.lang.reflect.Type listType = new TypeToken<ArrayList<Weather>>() {
 		        }.getType();
 		forecastList = new Gson().fromJson(inFromServer, listType);
 		

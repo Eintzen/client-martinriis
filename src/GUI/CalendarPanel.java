@@ -90,7 +90,7 @@ public class CalendarPanel extends JPanel {
 		
 		//Create controls
         lblMonth = new JLabel ("January");
-        lblYear = new JLabel ("Change year:");
+        lblYear = new JLabel ("Choose year:");
         cmbYear = new JComboBox();
         btnPrev = new JButton ("<<");
         btnNext = new JButton (">>");
@@ -410,7 +410,7 @@ public class CalendarPanel extends JPanel {
 			label.setBounds(1007, 549, 79, 40);
 			add(label);
 			
-			notesLabel = new JLabel("Event noter");
+			notesLabel = new JLabel("Event notes");
 			notesLabel.setVisible(false);
 			notesLabel.setFont(new Font("Helvetica", Font.BOLD, 18));
 			notesLabel.setBounds(338, 474, 525, 59);
@@ -444,7 +444,7 @@ public class CalendarPanel extends JPanel {
 			notesScrollPane.setBounds(340, 540, 640, 90);
 			add(notesScrollPane);
 			
-			btnAddNote = new JButton("Tilføj note");
+			btnAddNote = new JButton("Add note");
 			btnAddNote.setBounds(335, 635, 117, 29);
 			btnAddNote.setVisible(false);
 			add(btnAddNote);
@@ -474,12 +474,12 @@ public class CalendarPanel extends JPanel {
 			lblPleaseWait.setVisible(true);
 			add(lblPleaseWait);
 			
-			btnDeleteNote = new JButton("Slet note");
+			btnDeleteNote = new JButton("Delete note");
 			btnDeleteNote.setVisible(false);
 			btnDeleteNote.setBounds(450, 635, 117, 29);
 			add(btnDeleteNote);
 			
-			JButton btnWeekView = new JButton("Uge visning");
+			JButton btnWeekView = new JButton("Weekly view");
 			btnWeekView.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					weekView = true;
@@ -489,7 +489,7 @@ public class CalendarPanel extends JPanel {
 			btnWeekView.setBounds(1084, 30, 103, 29);
 			add(btnWeekView);
 			
-			JButton btnDayView = new JButton("Dagsvisning");
+			JButton btnDayView = new JButton("Daily view");
 			btnDayView.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					weekView = false;
@@ -499,7 +499,7 @@ public class CalendarPanel extends JPanel {
 			btnDayView.setBounds(985, 30, 103, 29);
 			add(btnDayView);
 			
-			JLabel lblChangeCalendar = new JLabel("Change calendar:");
+			JLabel lblChangeCalendar = new JLabel("Choose calendar:");
 			lblChangeCalendar.setBounds(15, 345, 120, 16);
 			add(lblChangeCalendar);
 			
@@ -539,7 +539,7 @@ public class CalendarPanel extends JPanel {
 			changeCalendar.setBounds(216, 345, 99, 20);
 			add(changeCalendar);
 			
-			btnDeleteEvent = new JButton("Slet event");
+			btnDeleteEvent = new JButton("Delete event");
 			btnDeleteEvent.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					EventLogic EL = new EventLogic();
