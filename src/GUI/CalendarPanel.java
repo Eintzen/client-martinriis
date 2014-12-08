@@ -849,6 +849,8 @@ public class CalendarPanel extends JPanel {
 			event.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					NoteLogic note = new NoteLogic();
+					String selectedCal = "";
+					selectedCal = (String) changeCalendar.getSelectedItem();
 					currentEventID = eventUniqueID;
 					// show notes
 					getNotesLabel().setVisible(false);
@@ -860,6 +862,10 @@ public class CalendarPanel extends JPanel {
 					getNotesScrollPane().setVisible(true);
 					getBtnAddNote().setVisible(true);
 					getBtnDeleteNote().setVisible(true);
+					if(!selectedCal.equals("CBS Calendar")){
+						//only show delete event btn if not cbs calendar
+						getBtnDeleteEvent().setVisible(true);
+					}
 					try {
 						note.updateNotes(notesTableModel, eventUniqueID);
 					} catch (Exception e1) {
