@@ -26,17 +26,18 @@ public class LoginPanel extends JPanel {
 	private JLabel lblNewLabel;
 	private JLabel lblLogIn_1;
 	
-	public LoginPanel() { //constructor
+	public LoginPanel() {
+		setBackground(Color.LIGHT_GRAY); //constructor
 		
 		setSize(1200, 700);
 		setLayout(null);
 		
 		userMailLbl = new JLabel("E-mail:");
-		userMailLbl.setBounds(462, 300, 74, 16);
+		userMailLbl.setBounds(547, 269, 74, 16);
 		userMail = new JTextField();
 		userMail.setBounds(542,297, 242, 22);
 		userPassLbl = new JLabel("Password:");
-		userPassLbl.setBounds(462, 346, 63, 16);
+		userPassLbl.setBounds(547, 342, 63, 16);
 		userPass = new JPasswordField();
 		userPass.addKeyListener(new KeyAdapter() {
 			@Override
@@ -48,7 +49,7 @@ public class LoginPanel extends JPanel {
 		        }
 			}
 		});
-		userPass.setBounds(542, 340, 242, 22);
+		userPass.setBounds(542, 370, 242, 22);
 
 		add(userMailLbl);
 		add(userMail);
@@ -56,15 +57,15 @@ public class LoginPanel extends JPanel {
 		add(userPass);
 		
 		// Welcome message
-		lblWelcomeCbsCalendar = new JLabel("<html><div style='text-align:center;'>Welcome to CBS Calendar<br>Please log in below</div></html>");
+		lblWelcomeCbsCalendar = new JLabel("<html><div style='text-align:center;'>Welcome to The CBS Calendar<br>Log in below\n</div></html>");
 		lblWelcomeCbsCalendar.setBounds(557, 194, 210, 59);
-		lblWelcomeCbsCalendar.setFont(new Font("Helvetica", Font.BOLD, 16));
+		lblWelcomeCbsCalendar.setFont(new Font("Helvetica", Font.BOLD, 18));
 		add(lblWelcomeCbsCalendar);
 		
 		// Error message when login failed
 		lblInvalidUserPass = new JLabel("<html>Invalid username or password <br/>Please try again</html>");
 		lblInvalidUserPass.setForeground(Color.red);
-		lblInvalidUserPass.setBounds(552, 502, 232, 32);
+		lblInvalidUserPass.setBounds(552, 521, 232, 32);
 		lblInvalidUserPass.setVisible(false);
 		add(lblInvalidUserPass);
 		
@@ -82,7 +83,7 @@ public class LoginPanel extends JPanel {
 			}
 		});
 		lblLogIn_1.setIcon(new ImageIcon(LoginPanel.class.getResource("/unlocked46.png")));
-		lblLogIn_1.setBounds(598, 374, 117, 105);
+		lblLogIn_1.setBounds(604, 404, 117, 105);
 		add(lblLogIn_1);
 	}
 	

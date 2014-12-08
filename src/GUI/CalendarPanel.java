@@ -408,7 +408,7 @@ public class CalendarPanel extends JPanel {
 			label.setBounds(1007, 549, 79, 40);
 			add(label);
 			
-			notesLabel = new JLabel("Notes for event");
+			notesLabel = new JLabel("Event noter");
 			notesLabel.setVisible(false);
 			notesLabel.setFont(new Font("Helvetica", Font.BOLD, 18));
 			notesLabel.setBounds(338, 474, 525, 59);
