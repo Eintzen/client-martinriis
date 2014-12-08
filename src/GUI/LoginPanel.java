@@ -57,7 +57,7 @@ public class LoginPanel extends JPanel {
 		add(userPass);
 		
 		// Welcome message
-		lblWelcomeCbsCalendar = new JLabel("<html><div style='text-align:center;'>Welcome to The CBS Calendar<br>Log in below\n</div></html>");
+		lblWelcomeCbsCalendar = new JLabel("<html><div style='text-align:center;'>Welcome to Martin's CBS Calendar<br>Log in below\n</div></html>");
 		lblWelcomeCbsCalendar.setBounds(557, 194, 210, 59);
 		lblWelcomeCbsCalendar.setFont(new Font("Helvetica", Font.BOLD, 18));
 		add(lblWelcomeCbsCalendar);

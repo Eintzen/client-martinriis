@@ -2,7 +2,7 @@ package Logic;
 
 import Shared.TCPClient;
 
-public class Quote {
+public class QuoteLogic {
 	
 	public String getQuote() throws Exception{
 		

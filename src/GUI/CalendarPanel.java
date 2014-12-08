@@ -6,7 +6,7 @@ import javax.swing.table.DefaultTableModel;
 
 import GUI.MainContainer;
 import Logic.EventLogic;
-import Logic.Quote;
+import Logic.QuoteLogic;
 import Logic.NoteLogic;
 import Logic.CalendarLogic;
 import Logic.LoadCalendarData;
@@ -323,7 +323,7 @@ public class CalendarPanel extends JPanel {
 		add(lblQuoteAuthor);
 	
 		// Load quote of the day
-		Quote quote = new Quote();
+		QuoteLogic quote = new QuoteLogic();
 		try {
 			lblQuote.setText("<html>" + quote.getQuote() + "</html>");
 			lblQuoteAuthor.setText("<html><strong> - " + quote.getAuthor() + "</strong></html>");
