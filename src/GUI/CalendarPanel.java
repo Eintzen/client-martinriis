@@ -99,6 +99,7 @@ public class CalendarPanel extends JPanel {
         tblCalendar.setCellSelectionEnabled(true);
         stblCalendar = new JScrollPane(tblCalendar);
         pnlCalendar = new JPanel(null);
+        pnlCalendar.setBackground(new Color(250, 235, 215));
         
         String[] columnNames = {"Note", "Author", "Date", "ID"};
         
