@@ -584,7 +584,7 @@ public class CalendarPanel extends JPanel {
 			
 			tempLabel = new JLabel("");
 			tempLabel.setIcon(new ImageIcon(CalendarPanel.class.getResource("/barometer.png")));
-			tempLabel.setBounds(136, 403, 61, 72);
+			tempLabel.setBounds(200, 403, 61, 72);
 			add(tempLabel);
 			
 			btnDeleteNote.addActionListener(new ActionListener() {
