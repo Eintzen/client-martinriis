@@ -1,9 +1,5 @@
 package Shared;
 
-/**
- * Created by danielfranch on 16/10/14.
- * Constructor til ForecastModel Arraylist
- */
 public class Weather {
 
     private String date;
