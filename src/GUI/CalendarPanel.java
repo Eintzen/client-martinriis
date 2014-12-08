@@ -80,8 +80,10 @@ public class CalendarPanel extends JPanel {
     private JLabel lblTodaysWeather;
     private JLabel lblTemperature;
     private JLabel lblTemperatureSummary;
+    private JLabel tempLabel;
 	
-	public CalendarPanel() { //constructor
+	public CalendarPanel() {
+		setBackground(new Color(250, 235, 215)); //constructor
 		
 		setSize(1200, 700);
 		setLayout(null);
@@ -569,16 +571,21 @@ public class CalendarPanel extends JPanel {
 			add(btnDeleteEvent);
 			
 			lblTodaysWeather = new JLabel("<html><strong>Today's weather</strong></html>");
-			lblTodaysWeather.setBounds(15, 388, 120, 16);
+			lblTodaysWeather.setBounds(15, 403, 120, 16);
 			add(lblTodaysWeather);
 			
 			lblTemperature = new JLabel("Temperature:");
-			lblTemperature.setBounds(15, 416, 246, 16);
+			lblTemperature.setBounds(15, 431, 246, 16);
 			add(lblTemperature);
 			
 			lblTemperatureSummary = new JLabel("Description: ");
-			lblTemperatureSummary.setBounds(15, 437, 300, 16);
+			lblTemperatureSummary.setBounds(15, 459, 300, 16);
 			add(lblTemperatureSummary);
+			
+			tempLabel = new JLabel("");
+			tempLabel.setIcon(new ImageIcon(CalendarPanel.class.getResource("/barometer.png")));
+			tempLabel.setBounds(136, 403, 61, 72);
+			add(tempLabel);
 			
 			btnDeleteNote.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {

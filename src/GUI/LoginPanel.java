@@ -27,7 +27,7 @@ public class LoginPanel extends JPanel {
 	private JLabel lblLogIn_1;
 	
 	public LoginPanel() {
-		setBackground(Color.LIGHT_GRAY); //constructor
+		setBackground(new Color(250, 235, 215)); //constructor
 		
 		setSize(1200, 700);
 		setLayout(null);
