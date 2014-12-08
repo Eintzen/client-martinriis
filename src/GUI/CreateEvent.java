@@ -262,7 +262,7 @@ public class CreateEvent extends JPanel {
 						lblPleaseSelectA.setVisible(false);
 						lblYourEventWas.setVisible(true);
 						try {
-							EL.insertEvent(eventDate, startDate, endDate, selectedCalendar, eventText);
+							EL.addEvent(eventDate, startDate, endDate, selectedCalendar, eventText);
 						} catch (Exception e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();

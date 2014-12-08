@@ -13,7 +13,7 @@ public class EventLogic {
 	TCPClient TcpClient = new TCPClient();
 	private static String requestedCal;
 	
-	public void insertEvent(String dateOfEvent, String startTime, String endTime, String selectedCalendar, String eventText) throws Exception{
+	public void addEvent(String dateOfEvent, String startTime, String endTime, String selectedCalendar, String eventText) throws Exception{
 		
 		requestedCal = ic.getCalendarID(selectedCalendar);
 		System.out.println(dateOfEvent);

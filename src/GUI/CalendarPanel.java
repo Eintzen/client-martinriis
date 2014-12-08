@@ -460,7 +460,7 @@ public class CalendarPanel extends JPanel {
 						e1.printStackTrace();
 					}
 					try {
-						note.refreshNotes(notesTableModel, currentEventID);
+						note.updateNotes(notesTableModel, currentEventID);
 					} catch (Exception e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
@@ -594,13 +594,13 @@ public class CalendarPanel extends JPanel {
 	        		int noteID = (int) notesTable.getValueAt(row, 3);
 	        		String noteIDstring = String.valueOf(noteID);
 	        		try {
-						note.removeNote(noteIDstring);
+						note.deleteNote(noteIDstring);
 					} catch (Exception e2) {
 						// TODO Auto-generated catch block
 						e2.printStackTrace();
 					}
 					try {
-						note.refreshNotes(notesTableModel, currentEventID);
+						note.updateNotes(notesTableModel, currentEventID);
 					} catch (Exception e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
@@ -860,7 +860,7 @@ public class CalendarPanel extends JPanel {
 					getBtnAddNote().setVisible(true);
 					getBtnDeleteNote().setVisible(true);
 					try {
-						note.refreshNotes(notesTableModel, eventUniqueID);
+						note.updateNotes(notesTableModel, eventUniqueID);
 					} catch (Exception e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();

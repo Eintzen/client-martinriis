@@ -27,7 +27,7 @@ public class NoteLogic {
 		
 	}
 	
-	public void removeNote(String noteID) throws Exception{
+	public void deleteNote(String noteID) throws Exception{
 		
 		TCPClient TcpClient = new TCPClient();
 		
@@ -35,7 +35,7 @@ public class NoteLogic {
 		
 	}
 	
-	public void refreshNotes(DefaultTableModel tableModel, String eventID) throws Exception{
+	public void updateNotes(DefaultTableModel tableModel, String eventID) throws Exception{
 		
 		TCPClient TcpClient = new TCPClient();
 		
