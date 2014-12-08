@@ -363,7 +363,7 @@ public class CalendarPanel extends JPanel {
 			BackButton.setBorderPainted(false);
 			add(BackButton);
 			
-			lblCalendarExists = new JLabel("<html>You aleady have a calendar<br />by that name</html>");
+			lblCalendarExists = new JLabel("<html>Similar calendar is already<br />existing</html>");
 			lblCalendarExists.setForeground(Color.RED);
 			lblCalendarExists.setBounds(992, 601, 110, 63);
 			lblCalendarExists.setVisible(false);
