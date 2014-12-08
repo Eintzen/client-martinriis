@@ -2,7 +2,7 @@ package Shared;
 
 import java.util.ArrayList;
 
-public class Event {
+public class EventInfo {
     private String activityid;
     private String eventid;
     private String type;
@@ -13,7 +13,7 @@ public class Event {
     private ArrayList<String> start;
     private ArrayList<String> end;
 
-    // Settere og gettere for Event objektet 
+    // Setters and getters for the event object 
     public void setActivityid(String activityid){
         this.activityid = activityid;
     }
@@ -76,7 +76,7 @@ public class Event {
     public ArrayList<String> getEnd(){
         return end;
     }
-	public Event(String activityid, String eventid, String type, String title,
+	public EventInfo(String activityid, String eventid, String type, String title,
 			String description, String location, String createdby, ArrayList<String> start,
 			ArrayList<String> end) {
 		super();

@@ -5,17 +5,17 @@ import java.util.Arrays;
 
 
 public class Events {
-    ArrayList<Event> events = new ArrayList<Event>();
+    ArrayList<EventInfo> events = new ArrayList<EventInfo>();
     
     
     String currentUser;
 
 
-    public void setEvents(ArrayList<Event> event) {
+    public void setEvents(ArrayList<EventInfo> event) {
         this.events = event;
     }
     
-    public ArrayList<Event> getEvents(){
+    public ArrayList<EventInfo> getEvents(){
     	return events;
     }
     

@@ -6,7 +6,7 @@ import java.util.GregorianCalendar;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import Shared.Event;
+import Shared.EventInfo;
 import Shared.TCPClient;
 import Shared.Events;
 
